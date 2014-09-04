@@ -1,16 +1,16 @@
 !!!
-  %html
-    %head
+%html
+  %head
 
-      %meta{ charset: "utf-8"                    }
-      %meta{ name:    "ROBOTS", content: "NOODP" }
+    %meta{ charset: "utf-8"                    }
+    %meta{ name:    "ROBOTS", content: "NOODP" }
 
-      %title= yield(:title)
+    %title Frosted House App
 
-      = stylesheet_link_tag :application, media: 'all', cache: true
-      = csrf_meta_tags
+    = stylesheet_link_tag :main, media: 'all', cache: true
+    = csrf_meta_tags
 
-      = javascript_include_tag 'application'
+    = javascript_include_tag 'body'
+  %body
 
-    %body
-      = yield
+    = yield
